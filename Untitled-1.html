@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 🎉 Happy Birthday 🎉</title>
+  <style>
+    body {
+
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #563f2f, #473219);
+  text-align: center;
+  color: white;
+}
+      
+
+    .card {
+      padding: 30px 15px;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      background: white;
+      color: #ff6f91;
+      width: 80%;
+    }
+
+    .hidden {
+      display: none;
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🎉 Happy Birthday Syn ! 🎉</h1>
+    <p>Tap the button for a surprise 👀</p>
+
+    <button onclick="showMessage()">Open 🎁</button>
+
+    <div id="message" class="hidden">
+      🎂 Wishing you an amazing day!  
+      You’re the best kiddo ˶ᵔ ᵕ ᵔ˶
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+function showMessage() {
+  document.getElementById("message").style.display = "block";
+
+  // 🎉 CONFETTI
+  confetti({
+    particleCount: 150,
+    spread: 70,
+    origin: { y: 0.6 }
+  });
+}
+</script>
+
+  
+
+</body>
+</html>
